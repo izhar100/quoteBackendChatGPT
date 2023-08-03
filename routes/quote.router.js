@@ -37,6 +37,7 @@ async function generateQuote(keyword,quoteType) {
             'Authorization': `Bearer ${apiKey}`
         }
     })
+    console.log("response:",response)
     return response.data.choices[0].text.trim();
 }
 
